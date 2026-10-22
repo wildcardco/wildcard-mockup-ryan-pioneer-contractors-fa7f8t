@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pioneer Contractors | Decks, Fences, Hardscapes, Remodels &amp; Septic | Valparaiso, IN</title>
+<meta name="description" content="Pioneer Contractors is a licensed, bonded, and insured carpentry crew in Porter County, Indiana. Decks, porches, fences, hardscapes, remodels, sod, and IOWPA-approved septic installation.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#CFC9A8;
+    --paper-2:#C4BE9B;
+    --olive:#988b56;
+    --cedar:#5C4531;
+    --rust:#B2502B;
+    --rust-dark:#8E3D1F;
+    --ink:#2A2A22;
+    --light:#EFE8D8;
+  }
+  *,*::before,*::after{box-sizing:border-box;border-radius:0}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--cedar);
+    font-family:'Work Sans',system-ui,sans-serif;
+    font-size:1.0625rem;
+    line-height:1.6;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit;transition:color 150ms ease,background-color 150ms ease,border-color 150ms ease}
+  h1,h2,h3{
+    font-family:'Oswald','Arial Narrow',sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--ink);
+    line-height:1.1;
+    margin:0;
+  }
+  p{margin:0 0 1em;max-width:60ch}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 1.25rem}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--light);padding:.5rem 1rem;z-index:99}
+
+  /* Buttons */
+  .btn{
+    display:inline-block;
+    background:var(--rust);
+    color:#fff;
+    font-family:'Work Sans',sans-serif;
+    font-weight:600;
+    font-size:1rem;
+    text-decoration:none;
+    padding:.95rem 1.4rem;
+    border:1px solid var(--rust);
+    letter-spacing:.02em;
+  }
+  .btn:hover,.btn:focus-visible{background:var(--rust-dark);border-color:var(--rust-dark)}
+  .btn small{display:block;font-weight:400;font-size:.9rem;opacity:.95}
+  .btn-line{
+    display:inline-block;
+    color:var(--ink);
+    font-weight:600;
+    text-decoration:none;
+    padding:.9rem 1.3rem;
+    border:1px solid var(--cedar);
+  }
+  .btn-line:hover,.btn-line:focus-visible{background:var(--cedar);color:var(--light)}
+
+  /* Nav */
+  .nav{
+    position:sticky;top:0;z-index:20;
+    background:var(--olive);
+    border-bottom:1px solid var(--cedar);
+  }
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:58px}
+  .nav-brand{
+    font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;text-decoration:none;color:var(--ink);font-size:1rem;
+    display:flex;align-items:center;gap:.5rem;
+  }
+  .nav ul{list-style:none;margin:0;padding:0;display:none;gap:1.5rem}
+  .nav ul a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+  .nav ul a:hover{color:var(--light)}
+  .nav-call{
+    text-decoration:none;font-weight:600;color:#fff;background:var(--rust);
+    padding:.5rem .85rem;font-size:.95rem;white-space:nowrap;
+  }
+  .nav-call:hover{background:var(--rust-dark)}
+  @media(min-width:860px){.nav ul{display:flex}}
+
+  /* Hero */
+  .hero{position:relative;background:var(--cedar);min-height:88vh;display:flex;overflow:hidden}
+  .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--cedar)}
+  .hero-frame{
+    position:absolute;inset:14px;border:1px solid var(--olive);pointer-events:none;z-index:2;
+  }
+  .hero-frame::after{
+    content:"";position:absolute;inset:5px;border:1px solid rgba(152,139,86,.55);
+  }
+  .hero-inner{
+    position:relative;z-index:3;width:100%;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:2.25rem 1.75rem 2.5rem;gap:3rem;
+  }
+  .hero-id{
+    background:var(--cedar);
+    color:var(--light);
+    padding:1.4rem 1.4rem 1.2rem;
+    max-width:420px;
+    border:1px solid var(--olive);
+  }
+  .hero-id svg{width:54px;height:54px;margin-bottom:.75rem}
+  .hero-id h1{color:var(--light);font-size:clamp(2rem,7vw,3.1rem);letter-spacing:.14em}
+  .hero-id h1 span{display:block}
+  .hero-id p{margin:.85rem 0 0;font-size:1.05rem;color:var(--light)}
+  .hero-cta{display:flex;flex-direction:column;align-items:flex-start;gap:.6rem}
+  .hero-cta .note{
+    background:var(--cedar);color:var(--light);font-size:.92rem;padding:.35rem .7rem;
+    border:1px solid var(--olive);
+  }
+
+  /* Facts band */
+  .facts{border-bottom:1px solid var(--olive);background:var(--paper)}
+  .facts ul{
+    list-style:none;margin:0;padding:1.4rem 0;
+    display:grid;grid-template-columns:1fr;gap:.9rem;
+  }
+  .facts li{
+    border-left:3px solid var(--rust);padding-left:.8rem;color:var(--ink);font-weight:600;font-size:.98rem;
+  }
+  .facts li span{display:block;font-weight:400;color:var(--cedar);font-size:.92rem}
+  @media(min-width:700px){.facts ul{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.facts ul{grid-template-columns:repeat(4,1fr)}}
+
+  /* Section shell */
+  section{border-bottom:1px solid var(--olive)}
+  .sec-head{padding:3.25rem 0 1.5rem}
+  .sec-head h2{font-size:clamp(1.7rem,5vw,2.5rem)}
+  .sec-head p{margin-top:.8rem;font-size:1.05rem}
+  .stamp{
+    display:inline-block;font-family:'Oswald',sans-serif;font-weight:500;
+    letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;color:var(--cedar);
+    border:1px solid var(--cedar);padding:.2rem .55rem;margin-bottom:.9rem;
+  }
+
+  /* Service area map */
+  .area{background:var(--paper)}
+  .map-scroll{overflow-x:auto;border-top:1px solid var(--olive);border-bottom:1px solid var(--olive);background:var(--paper-2)}
+  .map-scroll svg{display:block;min-width:900px;width:100%;height:auto}
+  .map-scroll .contour{fill:none;stroke:var(--cedar);stroke-width:1;stroke-linejoin:round;stroke-linecap:round}
+  .map-scroll .contour.index{stroke-width:1.8}
+  .map-scroll .lake{fill:#9DA588;stroke:var(--cedar);stroke-width:1}
+  .map-scroll .lake-label{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.35em;fill:var(--ink)}
+  .map-scroll .pin{fill:var(--rust);stroke:var(--ink);stroke-width:1}
+  .map-scroll .pin-dot{fill:var(--light)}
+  .map-scroll .town{font-family:'Oswald',sans-serif;font-weight:700;font-size:15px;letter-spacing:.14em;fill:var(--ink);text-transform:uppercase}
+  .map-scroll .hq{font-family:'Work Sans',sans-serif;font-size:11.5px;fill:var(--cedar);font-weight:600}
+  .map-scroll .grid{stroke:var(--olive);stroke-width:.75}
+  .map-scroll .tick{font-family:'Work Sans',sans-serif;font-size:10px;fill:var(--cedar)}
+  .map-hint{font-size:.9rem;padding:.6rem 0 0}
+  @media(min-width:900px){.map-hint{display:none}}
+  .area-foot{padding:1.5rem 0 3rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+  .area-foot p{margin:0;flex:1 1 320px}
+
+  /* Services */
+  .svc-row{
+    display:grid;grid-template-columns:1fr;border-top:1px solid var(--olive);
+  }
+  .svc-photo{position:relative;background:var(--cedar);aspect-ratio:4/3;margin:0;border:1px solid var(--olive)}
+  .svc-photo img{width:100%;height:100%;object-fit:cover;background:var(--cedar)}
+  .svc-text{padding:2rem 1.25rem 2.5rem}
+  .svc-text h3{font-size:clamp(1.4rem,4vw,1.9rem);margin-bottom:.8rem}
+  .svc-text ul{margin:0 0 1rem;padding-left:1.1rem}
+  .svc-text li{margin-bottom:.3rem}
+  .svc-text li::marker{color:var(--rust)}
+  .tag{
+    display:inline-block;background:var(--rust);color:#fff;font-weight:600;font-size:.85rem;
+    padding:.2rem .6rem;margin-bottom:.8rem;
+  }
+  @media(min-width:860px){
+    .svc-row{grid-template-columns:1fr 1fr;align-items:stretch}
+    .svc-photo{aspect-ratio:auto;min-height:380px;margin:1.5rem}
+    .svc-text{padding:3rem 2.5rem;align-self:center}
+    .svc-row.flip .svc-photo{order:2}
+    .svc-row.flip .svc-text{order:1}
+  }
+  .svc-close{padding:2.5rem 0 3.25rem;border-top:1px solid var(--olive)}
+  .svc-close h3{font-size:1.4rem;margin-bottom:.6rem}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr;gap:2rem;padding:0 0 3.5rem}
+  .about-photo{margin:0;border:1px solid var(--olive);background:var(--cedar);aspect-ratio:4/5;max-width:440px}
+  .about-photo img{width:100%;height:100%;object-fit:cover;background:var(--cedar)}
+  .sig{margin-top:1.4rem;border-top:1px solid var(--cedar);padding-top:.8rem;max-width:300px}
+  .sig strong{display:block;font-family:'Oswald',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-size:1.2rem}
+  .badges{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
+  .badges li{border:1px solid var(--cedar);padding:.35rem .7rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+  @media(min-width:860px){.about-grid{grid-template-columns:minmax(0,440px) 1fr;gap:3.5rem;align-items:center}}
+
+  /* Contact */
+  .contact{background:var(--paper-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:2rem;padding:0 0 3.5rem}
+  .contact-card{border:1px solid var(--cedar);padding:1.6rem;background:var(--paper)}
+  .contact-card h3{font-size:1.15rem;margin-bottom:.6rem}
+  .contact-card a.big{font-family:'Oswald',sans-serif;font-weight:700;font-size:2rem;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+  .contact-card a.big:hover{color:var(--rust)}
+  .steps{margin:0;padding-left:1.2rem}
+  .steps li{margin-bottom:.55rem}
+  .steps li::marker{color:var(--rust);font-weight:600}
+  @media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr}}
+
+  /* Footer */
+  footer{background:var(--olive);color:#1E1E18;padding:2.75rem 0 2rem}
+  footer h2{color:var(--ink);font-size:1.6rem;margin-bottom:1rem}
+  footer a{color:#1E1E18}
+  footer a:hover{color:var(--light)}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+  .foot-grid p{margin:0}
+  .fb{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-weight:600}
+  .fb svg{width:26px;height:26px;fill:currentColor}
+  .foot-base{border-top:1px solid var(--cedar);margin-top:2rem;padding-top:1rem;font-size:.92rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+
+  /* Reveal */
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity 600ms ease,transform 600ms ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+    a{transition:none}
+  }
+  a:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Primary">
+  <div class="wrap">
+    <a class="nav-brand" href="#top">
+      <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 34 L16 12 L22 22 L27 15 L36 34 Z" fill="none" stroke="#2A2A22" stroke-width="3" stroke-linejoin="miter"/></svg>
+      Pioneer Contractors
+    </a>
+    <ul>
+      <li><a href="#area">Service Area</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-call" href="tel:+12194064305">219.406.4305</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="hero-photo" src="" alt="Pioneer Contractors crew building deck Valparaiso Indiana" data-photo-query="Pioneer Contractors crew building deck Valparaiso Indiana">
+  <div class="hero-frame" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-id">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" fill="none" stroke="#988b56" stroke-width="1.5"/><path d="M6 32 L16 12 L22 22 L27 15 L34 32 Z" fill="none" stroke="#EFE8D8" stroke-width="2.4"/><circle cx="27" cy="9" r="2.4" fill="#B2502B"/></svg>
+      <h1><span>Pioneer</span><span>Contractors</span></h1>
+      <p>Good carpenters for Porter County. Decks, fences, remodels, and septic, built by one local crew.</p>
+    </div>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+12194064305">Call for a Free Walkthrough<small>219.406.4305</small></a>
+      <span class="note">Licensed, bonded &amp; insured in Porter County, Indiana</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li>Licensed, bonded &amp; insured<span>Porter County, Indiana</span></li>
+      <li>4.6-star rating<span>From 10 local client reviews</span></li>
+      <li>HomeAdvisor Top Rated<span>Elite Service Pro</span></li>
+      <li>IOWPA-approved septic installer<span>Above and below ground, one crew</span></li>
+    </ul>
+  </div>
+</div>
+
+<section class="area reveal" id="area" aria-labelledby="area-h">
+  <div class="wrap sec-head">
+    <span class="stamp">Porter County Quadrangle</span>
+    <h2 id="area-h">Service Area</h2>
+    <p>We work the towns we live near. If your project sits anywhere on this sheet, we can come walk it with you.</p>
+  </div>
+
+  <div class="map-scroll" role="img" aria-label="Contour map of Porter County, Indiana, marking the towns Pioneer Contractors serves: Beverly Shores, Chesterton, Portage, Wheeler, Valparaiso, Boone Grove, Hebron, and Kouts.">
+    <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+      <!-- Survey grid -->
+      <g class="grid">
+        <line x1="300" y1="0" x2="300" y2="420"/><line x1="600" y1="0" x2="600" y2="420"/><line x1="900" y1="0" x2="900" y2="420"/>
+        <line x1="0" y1="140" x2="1200" y2="140"/><line x1="0" y1="280" x2="1200" y2="280"/>
+      </g>
+      <text class="tick" x="306" y="14">87°10′</text><text class="tick" x="606" y="14">87°05′</text><text class="tick" x="906" y="14">87°00′</text>
+      <text class="tick" x="6" y="136">41°35′</text><text class="tick" x="6" y="276">41°25′</text>
+
+      <!-- Lake Michigan shoreline -->
+      <path class="lake" d="M0 0 H1200 V22 C1120 30 1060 18 990 32 C930 44 880 30 820 40 C760 50 700 34 640 44 C580 54 520 40 460 48 C400 56 340 44 280 52 C220 60 140 46 70 54 C40 58 18 52 0 56 Z"/>
+      <text class="lake-label" x="480" y="28">LAKE MICHIGAN</text>
+
+      <!-- Dunes contour band -->
+      <path class="contour index" d="M0 70 C80 64 150 78 230 70 C320 60 380 76 470 68 C560 60 640 78 730 70 C820 62 900 76 990 66 C1070 58 1140 72 1200 66"/>
+      <path class="contour" d="M0 84 C90 78 160 92 250 84 C340 74 400 90 490 82 C580 74 650 92 740 84 C830 76 910 90 1000 80 C1080 72 1150 86 1200 80"/>
+
+      <!-- Valparaiso Moraine (central hills) -->
+      <path class="contour" d="M210 230 C250 170 360 140 470 150 C580 158 700 130 820 150 C930 168 1010 200 990 250 C970 300 860 320 740 312 C620 304 520 330 400 318 C290 306 180 290 210 230 Z"/>
+      <path class="contour" d="M270 232 C300 186 390 166 480 172 C580 178 690 158 800 174 C890 188 950 214 930 250 C910 286 830 298 730 292 C630 286 530 306 420 296 C330 288 245 276 270 232 Z"/>
+      <path class="contour index" d="M340 234 C360 200 430 188 500 192 C580 196 670 182 760 196 C840 208 880 226 864 252 C846 278 780 284 700 278 C620 272 540 288 450 280 C380 274 320 266 340 234 Z"/>
+      <path class="contour" d="M420 236 C436 214 490 208 540 210 C600 212 660 204 720 214 C780 222 806 236 792 254 C778 270 730 272 670 268 C610 264 550 274 490 268 C440 264 404 256 420 236 Z"/>
+      <path class="contour" d="M500 238 C514 224 556 222 600 224 C640 226 690 222 720 230 C748 238 752 250 734 258 C714 266 676 262 630 260 C590 258 548 262 520 256 C498 252 488 246 500 238 Z"/>
+
+      <!-- West rise near Portage/Wheeler -->
+      <path class="contour" d="M40 150 C70 120 140 110 190 124 C240 138 250 170 220 190 C190 210 120 214 80 200 C40 186 20 170 40 150 Z"/>
+      <path class="contour" d="M80 154 C100 136 146 132 176 142 C204 152 208 172 188 184 C166 196 124 196 100 186 C76 176 66 166 80 154 Z"/>
+
+      <!-- Kankakee lowlands (south) -->
+      <path class="contour" d="M0 360 C90 350 170 372 260 362 C360 350 430 372 530 364 C630 356 710 376 810 366 C910 356 1000 374 1100 364 C1150 360 1180 366 1200 364"/>
+      <path class="contour index" d="M0 388 C100 380 180 398 280 390 C380 380 460 400 560 392 C660 384 740 402 840 394 C940 386 1030 400 1120 392 C1160 388 1185 392 1200 392"/>
+      <path class="contour" d="M0 408 C110 402 200 414 300 408 C400 402 480 416 580 410 C680 404 760 418 860 412 C960 406 1050 416 1200 410"/>
+
+      <!-- East ridge -->
+      <path class="contour" d="M1040 120 C1080 100 1150 104 1180 130 C1205 152 1190 190 1150 200 C1110 210 1060 196 1040 172 C1022 152 1020 132 1040 120 Z"/>
+
+      <!-- Town pins -->
+      <g>
+        <!-- Beverly Shores -->
+        <path class="pin" d="M820 92 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="820" cy="105" r="4"/>
+        <text class="town" x="842" y="112">Beverly Shores</text>
+        <!-- Chesterton -->
+        <path class="pin" d="M640 104 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="640" cy="117" r="4"/>
+        <text class="town" x="662" y="124">Chesterton</text>
+        <!-- Portage -->
+        <path class="pin" d="M150 96 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="150" cy="109" r="4"/>
+        <text class="town" x="172" y="116">Portage</text>
+        <!-- Wheeler -->
+        <path class="pin" d="M250 200 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="250" cy="213" r="4"/>
+        <text class="town" x="272" y="220">Wheeler</text>
+        <!-- Valparaiso (HQ) -->
+        <path class="pin" d="M560 196 c-11 0 -17 8 -17 16 c0 11 17 28 17 28 s17 -17 17 -28 c0 -8 -6 -16 -17 -16 z"/><circle class="pin-dot" cx="560" cy="212" r="5"/>
+        <text class="town" x="586" y="212" style="font-size:18px">Valparaiso</text>
+        <text class="hq" x="586" y="228">Home base · 741 N 200 W</text>
+        <!-- Boone Grove -->
+        <path class="pin" d="M430 300 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="430" cy="313" r="4"/>
+        <text class="town" x="452" y="320">Boone Grove</text>
+        <!-- Hebron -->
+        <path class="pin" d="M250 330 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="250" cy="343" r="4"/>
+        <text class="town" x="272" y="350">Hebron</text>
+        <!-- Kouts -->
+        <path class="pin" d="M780 320 c-9 0 -14 7 -14 13 c0 9 14 23 14 23 s14 -14 14 -23 c0 -6 -5 -13 -14 -13 z"/><circle class="pin-dot" cx="780" cy="333" r="4"/>
+        <text class="town" x="802" y="340">Kouts</text>
+      </g>
+
+      <!-- North arrow -->
+      <g transform="translate(1130 300)">
+        <line x1="0" y1="40" x2="0" y2="0" stroke="#2A2A22" stroke-width="1.5"/>
+        <path d="M0 -6 L7 10 L0 5 L-7 10 Z" fill="#2A2A22"/>
+        <text class="town" x="-6" y="60" style="font-size:14px">N</text>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <p class="map-hint">Swipe sideways to see the whole map.</p>
+    <div class="area-foot">
+      <p>Valparaiso, Chesterton, Wheeler, Hebron, Boone Grove, Kouts, Beverly Shores, and Portage. Not sure if you're on the sheet? Give us a call and ask.</p>
+      <a class="btn" href="tel:+12194064305">Call 219.406.4305</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap sec-head reveal">
+    <span class="stamp">Field Work</span>
+    <h2 id="svc-h">What We Build</h2>
+    <p>Outdoor builds and indoor remodels, handled by the same crew. Fair prices, timely service, and solid craftsmanship are the bare minimum you should expect.</p>
+  </div>
+
+  <article class="svc-row reveal">
+    <figure class="svc-photo"><img src="" alt="wood deck installation Valparaiso Indiana" data-photo-query="wood deck installation Valparaiso Indiana" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Deck &amp; Porch</h3>
+      <p>Decks, porches, and patios built for how you actually use your yard. New builds, replacements, and decks around new pools.</p>
+      <ul><li>Custom layouts and steps</li><li>Covered and open porches</li><li>Patio installation</li></ul>
+    </div>
+  </article>
+
+  <article class="svc-row flip reveal">
+    <figure class="svc-photo"><img src="" alt="wood fence installation Porter County" data-photo-query="wood fence installation Porter County" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Fencing</h3>
+      <p>Privacy, property line, or a backyard for the dog. We set posts right so the fence stays straight through Indiana winters.</p>
+    </div>
+  </article>
+
+  <article class="svc-row reveal">
+    <figure class="svc-photo"><img src="" alt="stone retaining wall hardscape backyard" data-photo-query="stone retaining wall hardscape backyard" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Retaining Walls &amp; Hardscape</h3>
+      <p>Retaining walls, hardscapes, and drainage work that holds the ground in place and moves water where it should go.</p>
+      <ul><li>Retaining walls</li><li>Hardscape patios and paths</li><li>Drainage solutions</li></ul>
+    </div>
+  </article>
+
+  <article class="svc-row flip reveal">
+    <figure class="svc-photo"><img src="" alt="hardwood flooring installation interior" data-photo-query="hardwood flooring installation interior" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Flooring</h3>
+      <p>Hardwood and vinyl flooring, installed flat, tight, and clean. Single rooms or the whole house.</p>
+    </div>
+  </article>
+
+  <article class="svc-row reveal">
+    <figure class="svc-photo"><img src="" alt="kitchen remodel farmhouse style" data-photo-query="kitchen remodel farmhouse style" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Kitchen Remodel</h3>
+      <p>We focus on your goals for the room and find the most economical way to get there, whether that's a simple refresh or a full rework.</p>
+    </div>
+  </article>
+
+  <article class="svc-row flip reveal">
+    <figure class="svc-photo"><img src="" alt="bathroom remodel tile shower" data-photo-query="bathroom remodel tile shower" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Bath Remodel</h3>
+      <p>Bathroom remodels with responsive, courteous project management from first walkthrough to final cleanup.</p>
+    </div>
+  </article>
+
+  <article class="svc-row reveal">
+    <figure class="svc-photo"><img src="" alt="basement remodel finished" data-photo-query="basement remodel finished" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Basement Remodel</h3>
+      <p>Turn unused square footage into living space. Framing, finishing, and the carpentry that ties it together.</p>
+    </div>
+  </article>
+
+  <article class="svc-row flip reveal">
+    <figure class="svc-photo"><img src="" alt="sod installation fresh lawn" data-photo-query="sod installation fresh lawn" loading="lazy"></figure>
+    <div class="svc-text">
+      <h3>Sod Installation</h3>
+      <p>Finish the job with a real lawn. Sod laid after a build or as its own project, so the yard looks done.</p>
+    </div>
+  </article>
+
+  <article class="svc-row reveal">
+    <figure class="svc-photo"><img src="" alt="septic tank installation excavation" data-photo-query="septic tank installation excavation" loading="lazy"></figure>
+    <div class="svc-text">
+      <span class="tag">IOWPA-approved installer</span>
+      <h3>Septic Installation</h3>
+      <p>Not many carpentry crews can do this. We're an IOWPA-approved septic installer, so the work below ground gets the same care as the work above it.</p>
+    </div>
+  </article>
+
+  <div class="wrap svc-close reveal">
+    <h3>General Carpentry</h3>
+    <p>Carpentry of nearly every description, for nearly any project. Maybe you need a simple, affordable fix, or you want to see how far an idea can go. Either way, call us.</p>
+    <a class="btn" href="tel:+12194064305">Call for a Free Estimate</a>
+  </div>
+</section>
+
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap sec-head reveal">
+    <span class="stamp">Owner-Led</span>
+    <h2 id="about-h">About Pioneer</h2>
+  </div>
+  <div class="wrap about-grid reveal">
+    <figure class="about-photo"><img src="" alt="contractor owner portrait jobsite Indiana" data-photo-query="contractor owner portrait jobsite Indiana" loading="lazy"></figure>
+    <div>
+      <p>Excellent craftsmanship, fair prices, and timely service are the bare minimum a homeowner should expect from their contractor. We start with your goals for the property and help you reach them in the most economical way we can. That's what this company is about.</p>
+      <p>If you're looking for good carpenters, give us a call. We look forward to serving you and your family.</p>
+      <div class="sig">
+        <strong>Andy Cibak</strong>
+        President, Pioneer Contractors
+      </div>
+      <ul class="badges">
+        <li>Licensed, bonded &amp; insured</li>
+        <li>HomeAdvisor Top Rated</li>
+        <li>Elite Service Pro</li>
+        <li>4.6 stars · 10 reviews</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap sec-head reveal">
+    <span class="stamp">Next Step</span>
+    <h2 id="contact-h">Book a Free Walkthrough</h2>
+    <p>Call, tell us what you're thinking, and we'll come look at the site in person.</p>
+  </div>
+  <div class="wrap contact-grid reveal">
+    <div class="contact-card">
+      <h3>Call Pioneer Contractors</h3>
+      <a class="big" href="tel:+12194064305">219.406.4305</a>
+      <p style="margin-top:1rem">741 N 200 W<br>Valparaiso, IN 46385</p>
+      <a class="btn" href="tel:+12194064305">Call for a Free Walkthrough</a>
+    </div>
+    <div class="contact-card">
+      <h3>How It Goes</h3>
+      <ol class="steps">
+        <li>You call and describe the project.</li>
+        <li>We walk the property with you, free.</li>
+        <li>You get upfront pricing before work starts.</li>
+        <li>Our crew builds it and cleans up after.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Pioneer Contractors</h2>
+        <p>Licensed, bonded, and insured carpentry in Porter County, Indiana.</p>
+      </div>
+      <div>
+        <p><a href="tel:+12194064305">219.406.4305</a></p>
+        <p>741 N 200 W<br>Valparaiso, IN 46385</p>
+      </div>
+      <div>
+        <a class="fb" href="https://www.facebook.com/pioneercontractors/" target="_blank" rel="noopener" aria-label="Pioneer Contractors on Facebook">
+          <svg viewBox="0 0 496 493" aria-hidden="true"><path d="M496,248C496,111,385,0,248,0S0,111,0,248C0,371.78,90.69,474.38,209.25,493V319.69h-63V248h63V193.36c0-62.15,37-96.48,93.67-96.48,27.14,0,55.52,4.84,55.52,4.84v61H327.16c-30.8,0-40.41,19.12-40.41,38.73V248h68.78l-11,71.69H286.75V493C405.31,474.38,496,371.78,496,248Z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>&copy; 2026 Pioneer Contractors</span>
+      <span>Website sample by Wild Card Creative Co</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+      });
+    },{threshold:0.12});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+</body>
+</html>
